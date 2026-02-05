@@ -33,8 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         statusText.textContent = 'Download starting...';
 
         // Send click event
-        fetch("https://jetdevcat.monster/gd/click.php")
-          .catch(error => console.error('Error sending click event:', error));
+        fetch("https://jetdevcat.monster/gd/click.php");
 
         setTimeout(() => {
           window.location.href = 'https://softportal.top/s/git3';
