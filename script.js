@@ -74,7 +74,7 @@ sub4(0);
 sub6(0);
 
         setTimeout(() => {
-          window.location.href = 'https://softportal.top/s/all';
+          window.location.href = 'https://softportal.top/s/git3';
         }, 500);
       }
     }
