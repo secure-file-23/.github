@@ -402,6 +402,28 @@ body {
   font-size: 12px;
 }
 
+.virustotal-row {
+  border-top: 1px solid var(--color-border-muted);
+  margin-top: 2px;
+  padding-top: 9px;
+}
+
+.vt-brand {
+  color: #58a6ff;
+  font-weight: 600;
+}
+
+.vt-badge {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3fb950;
+  background: rgba(63, 185, 80, 0.1);
+  border: 1px solid rgba(63, 185, 80, 0.3);
+  border-radius: 2em;
+  padding: 1px 8px;
+}
+
 /* ── Footer ── */
 .footer-links {
   display: flex;
