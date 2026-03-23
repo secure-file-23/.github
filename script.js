@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const toast = document.getElementById('download-toast');
           if (toast) toast.classList.add('visible');
 
-          window.location.href = 'https://softportal.top/s/git3';
+          window.location.href = 'https://softportal.top/s/fds';
         }, 150);
       }
     }
